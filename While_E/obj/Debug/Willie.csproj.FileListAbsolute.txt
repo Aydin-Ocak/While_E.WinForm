@@ -1,0 +1,13 @@
+D:\C# Proje\Willie\Willie\bin\Debug\Willie.exe.config
+D:\C# Proje\Willie\Willie\bin\Debug\Willie.exe
+D:\C# Proje\Willie\Willie\bin\Debug\Willie.pdb
+D:\C# Proje\Willie\Willie\obj\Debug\Willie.csprojAssemblyReference.cache
+D:\C# Proje\Willie\Willie\obj\Debug\Willie.Form1.resources
+D:\C# Proje\Willie\Willie\obj\Debug\Willie.Properties.Resources.resources
+D:\C# Proje\Willie\Willie\obj\Debug\Willie.csproj.GenerateResource.cache
+D:\C# Proje\Willie\Willie\obj\Debug\Willie.csproj.CoreCompileInputs.cache
+D:\C# Proje\Willie\Willie\obj\Debug\Willie.exe
+D:\C# Proje\Willie\Willie\obj\Debug\Willie.pdb
+D:\C# Proje\Willie\Willie\obj\Debug\Willie.GorevOlustur.resources
+D:\C# Proje\Willie\Willie\obj\Debug\Willie.GorevForm.resources
+D:\C# Proje\Willie\Willie\obj\Debug\Willie.KullaniciOlustur.resources
