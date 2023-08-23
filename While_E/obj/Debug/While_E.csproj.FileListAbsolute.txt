@@ -24,3 +24,16 @@ D:\C# Proje\While_E\While_E\obj\Debug\While_E.csproj.GenerateResource.cache
 D:\C# Proje\While_E\While_E\obj\Debug\While_E.csproj.CoreCompileInputs.cache
 D:\C# Proje\While_E\While_E\obj\Debug\While_E.exe
 D:\C# Proje\While_E\While_E\obj\Debug\While_E.pdb
+D:\C# Proje\While_E\While_E.WinForm\While_E\bin\Debug\While_E.exe.config
+D:\C# Proje\While_E\While_E.WinForm\While_E\bin\Debug\While_E.exe
+D:\C# Proje\While_E\While_E.WinForm\While_E\bin\Debug\While_E.pdb
+D:\C# Proje\While_E\While_E.WinForm\While_E\obj\Debug\While_E.MainForm.resources
+D:\C# Proje\While_E\While_E.WinForm\While_E\obj\Debug\While_E.TaskForm.resources
+D:\C# Proje\While_E\While_E.WinForm\While_E\obj\Debug\While_E.TaskGenerate.resources
+D:\C# Proje\While_E\While_E.WinForm\While_E\obj\Debug\While_E.UserList.resources
+D:\C# Proje\While_E\While_E.WinForm\While_E\obj\Debug\While_E.Properties.Resources.resources
+D:\C# Proje\While_E\While_E.WinForm\While_E\obj\Debug\While_E.csproj.GenerateResource.cache
+D:\C# Proje\While_E\While_E.WinForm\While_E\obj\Debug\While_E.csproj.CoreCompileInputs.cache
+D:\C# Proje\While_E\While_E.WinForm\While_E\obj\Debug\While_E.exe
+D:\C# Proje\While_E\While_E.WinForm\While_E\obj\Debug\While_E.pdb
+D:\C# Proje\While_E\While_E.WinForm\While_E\obj\Debug\While_E.csproj.AssemblyReference.cache

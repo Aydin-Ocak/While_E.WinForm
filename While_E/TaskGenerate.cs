@@ -73,11 +73,19 @@ namespace While_E
             {
                 string userName = users[i].userName;
                 int userID = users[i].userID;
-
-                currentID = userID;
+                
                 cmbUser.Items.Add(userName);
             }
             
+        }
+
+        private void cmbUser_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            List<Users> nameToID = new List<Users>();
+            nameToID = WebServiceHelpers.GetUserName(cmbUser.Text);
+            int seciliUser = nameToID[0].userID;
+
+            currentID = seciliUser;
         }
     }
 }

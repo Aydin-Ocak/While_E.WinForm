@@ -74,7 +74,6 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
-            this.button8.Image = global::While_E.Properties.Resources.Close;
             this.button8.Location = new System.Drawing.Point(450, 0);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(54, 50);
@@ -158,6 +157,7 @@
             this.cmbUser.Name = "cmbUser";
             this.cmbUser.Size = new System.Drawing.Size(243, 33);
             this.cmbUser.TabIndex = 8;
+            this.cmbUser.SelectedIndexChanged += new System.EventHandler(this.cmbUser_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -169,7 +169,7 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "Kullanıcı:";
             // 
-            // GorevOlustur
+            // TaskGenerate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -186,7 +186,7 @@
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
-            this.Name = "GorevOlustur";
+            this.Name = "TaskGenerate";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GorevOlustur";
             this.Load += new System.EventHandler(this.GorevOlustur_Load);

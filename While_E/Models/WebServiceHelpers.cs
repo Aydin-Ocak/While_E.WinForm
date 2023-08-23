@@ -176,6 +176,27 @@ namespace While_E.Models
             }
             return SelectedUser;
         }
+        public static List<Task> GetCompTask(int ID)
+        {
+            Service.ServiceSoapClient service = new Service.ServiceSoapClient();
+            var response = service.Get_CompTasks(ID);
+            List<Task> compTasks = new List<Task>();
+
+            foreach (var item in response)
+            {
+                Task task = new Task();
+
+                task.taskId = (int)item.taskId;
+                task.taskName = item.taskName.ToString();
+                task.taskDesc = item.taskDesc.ToString();
+                task.taskComplete = (bool)item.taskComplete;
+                task.userID = (int)item.userID;
+
+                compTasks.Add(task);
+            }
+
+            return compTasks;
+        }
 
     }
     

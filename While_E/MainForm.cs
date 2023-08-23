@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using While_E.Models;
+using System.Data.SqlClient;
 
 namespace While_E
 {
@@ -96,18 +98,62 @@ namespace While_E
 
         private void cmbUser_SelectedIndexChanged(object sender, EventArgs e)
         {
+            ChardRefresh();
+        }
+
+        private void ChardRefresh()
+        {
+            List<Users> seciliUser = new List<Users>();
+            seciliUser = WebServiceHelpers.GetUserName(cmbUser.Text);
+            int secili_User = seciliUser[0].userID;
+
+            List<Models.Task> tasks = new List<Models.Task>();
+            tasks = WebServiceHelpers.GetSelectedTask(secili_User);
+
+            List<Models.Task> compTasks = new List<Models.Task>();
+            compTasks = WebServiceHelpers.GetCompTask(secili_User);
+
+            int tasks_int = tasks.Count;
+            int compTasks_int = compTasks.Count;
+            int kalan = tasks_int - compTasks_int;
+
             chart1.Series["Users"].Points.Clear();
 
-            int tamamlanan = 1;
-            int kalan = 3 - tamamlanan;
+            //int tamamlanan = 1;
+            //int kalan = 3 - tamamlanan;
 
-            chart1.Series["Users"].Points.AddXY("tamamlanan", tamamlanan);
+            chart1.Series["Users"].Points.AddXY("tamamlanan", compTasks_int);
             chart1.Series["Users"].Points.AddXY("kalan", kalan);
 
             chart1.Series["Users"].Points[0].LabelForeColor = Color.Transparent;
             chart1.Series["Users"].Points[1].LabelForeColor = Color.Transparent;
+            
+            chart1.Series["Users"].Points[1].Color = Color.FromArgb(255, 0, 34);
         }
 
 
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            List<Users> users = new List<Users>();
+            users = WebServiceHelpers.GetUsers();
+            
+            foreach(var i in users)
+            {
+                cmbUser.Items.Add(i.userName);
+            }
+            
+            cmbUser.SelectedIndex = 0;
+            ChardRefresh();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
